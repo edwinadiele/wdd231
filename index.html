@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <link rel="stylesheet" href="./styles/course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/Return WIth Honor.jpg" alt="Profile picture of Adiele Edwin Obinna">
+        <span>Adiele Edwin Obinna</span>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+            <li><a href="https://github.com/edwinadiele">GitHub Profile</a></li>
+            <li><a href="www.linkedin.com/in/edwinadiele ">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="grid">
+            <section class="course-work">
+                <h2>Course Work</h2>
+                <div class="placeholder-list">
+                    <ul>
+                        <li>.</li>
+                        <li>.</li>
+                        <li>.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="madagascar">
+                <h2>Toloria, Madagascar</h2>
+                <div class="image-container">
+                    <img src="images/pexels-felixmittermeier-1080401.jpg" alt="Baobab Trees in Madagascar" height="100px" width="10px">
+                    <p class="caption">Baobab Trees</p>
+                </div>
+            </section>
+        </div>
+
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button data-filter="all" class="filter-btn active">All</button>
+                <button data-filter="cse" class="filter-btn">CSE</button>
+                <button data-filter="wdd" class="filter-btn">WDD</button>
+            </div>
+            <div id="courses-grid">
+                </div>
+            <p>Total Credits: <span id="total-credits">0</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Adiele Edwin Obinna 📍 Lagos, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+   <script src="./scripts/course.js"></script>
+</body>
+</html>

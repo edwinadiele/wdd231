@@ -1,0 +1,279 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #004466;
+    color: white;
+    padding: 10px; /* Reduced padding for mobile */
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically on small screens */
+    text-align: center;
+}
+
+header img {
+    width: 80px; /* Slightly larger image for mobile */
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Add margin below image on mobile */
+}
+
+nav {
+    background-color: #006699;
+    color: white;
+    padding: 10px;
+}
+
+nav button#menu {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center; /* Center the hamburger button */
+}
+
+nav button#menu::before {
+    content: '☰';
+}
+
+nav button#menu.open::before {
+    content: 'X';
+}
+
+nav ul.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    text-align: center; /* Center navigation items */
+}
+
+nav ul.navigation.open {
+    display: block;
+}
+
+nav ul.navigation li a {
+    display: block;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #00527a; /* Add a border between links */
+}
+
+nav ul.navigation li a:last-child {
+    border-bottom: none; /* Remove border from the last link */
+}
+
+nav ul.navigation li a.active {
+    font-weight: bold;
+}
+
+nav ul.navigation li a:hover {
+    background-color: #00527a;
+}
+
+main {
+    padding: 15px; /* Reduced padding for mobile */
+}
+
+main h1 {
+    color: #004466;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em; /* Smaller heading for mobile */
+}
+
+.grid {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically on small screens */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.course-work, .madagascar {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-work h2, .madagascar h2 {
+    color: #006699;
+    margin-top: 0;
+    margin-bottom: 10px; /* Reduced margin for mobile */
+    font-size: 1.2em; /* Smaller heading for mobile */
+}
+
+.placeholder-list ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+}
+
+.image-container .caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em; /* Smaller caption for mobile */
+}
+
+.certificate {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.certificate h2 {
+    color: #006699;
+    margin-top: 0;
+    margin-bottom: 15px; /* Reduced margin for mobile */
+    font-size: 1.2em; /* Smaller heading for mobile */
+    text-align: center;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center; /* Center buttons on mobile */
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+    gap: 10px; /* Add some gap between buttons */
+}
+
+.filter-buttons button {
+    background-color: #006699;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    flex: 1 0 auto; /* Make buttons take up equal space if possible */
+    text-align: center;
+}
+
+
+.filter-buttons button.active {
+    background-color: #004466;
+    font-weight: bold;
+}
+
+.filter-buttons button:hover {
+    background-color: #00527a;
+}
+
+#courses-grid {
+    display: flex;
+    flex-direction: column; /* Stack course cards vertically on mobile */
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.course-card {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+.course-card.completed {
+    background-color: #ccf2ff;
+    border-color: #80dfff;
+}
+
+.course-card h3 {
+    color: #006699;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1em; /* Smaller heading for mobile */
+}
+
+.course-card p {
+    font-size: 0.9em; /* Smaller text for mobile */
+}
+
+.certificate p {
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    background-color: #004466;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8em; /* Smaller text for mobile */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .flag {
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    header img {
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+
+    nav button#menu {
+        display: none;
+    }
+
+    nav ul.navigation {
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    nav ul.navigation li {
+        margin-right: 15px;
+        border-bottom: none;
+    }
+
+    nav ul.navigation li:last-child {
+        margin-right: 0;
+    }
+
+    .grid {
+        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #courses-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
