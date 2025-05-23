@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timbuktu Chamber of Commerce - Directory</title>
+    <meta name="description" content="Directory of businesses in the Timbuktu Chamber of Commerce.">
+    <meta name="author" content="Your Name">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Timbuktu Chamber of Commerce - Directory">
+    <meta property="og:description" content="Directory of businesses in the Timbuktu Chamber of Commerce.">
+    <meta property="og:image" content="https://placehold.co/1200x630/0000FF/FFFFFF?text=Timbuktu+Chamber"> <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/directory.html"> <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Gold Logo Mockup on grey wall.jpg" alt="Adiele Edwin Obinna Chamber of Commerce Logo">
+                <h1>Adiele Edwin Obinna Chamber of Commerce</h1>
+            </a>
+        </div>
+        <nav>
+            <button id="menu" aria-label="Toggle navigation menu">&#9776;</button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Business Directory</h1>
+        <div class="view-toggle">
+            <button id="gridBtn" class="active">Grid View</button>
+            <button id="listBtn">List View</button>
+        </div>
+        <div id="members-grid" class="members-container grid">
+            <p class="loading-message">Loading member data...</p>
+        </div>
+        <div id="members-list" class="members-container list hidden">
+            <p class="loading-message">Loading member data...</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyrightYear"></span> Adiele Ediwn Obinna Chamber of Commerce</p>
+        <p>WDD 231 - Adiele Edwin Obinna</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

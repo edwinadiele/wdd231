@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Timbuktu Traders Inc.",
+      "address": "12 Market Street, Timbuktu",
+      "phone": "+223 123-456-7890",
+      "website": "https://www.example.com/traders",
+      "image": "logo_traders.webp",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Sahara Adventures Co.",
+      "address": "45 Dune Road, Timbuktu",
+      "phone": "+223 987-654-3210",
+      "website": "https://www.example.com/adventures",
+      "image": "logo_adventures.webp",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Oasis Imports",
+      "address": "78 Palm Avenue, Timbuktu",
+      "phone": "+223 555-123-4567",
+      "website": "https://www.example.com/imports",
+      "image": "logo_imports.webp",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Desert Blooms Nursery",
+      "address": "21 Sandy Lane, Timbuktu",
+      "phone": "+223 111-222-3333",
+      "website": "https://www.example.com/blooms",
+      "image": "logo_nursery.webp",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Ancient Artifacts Ltd.",
+      "address": "90 History Blvd, Timbuktu",
+      "phone": "+223 444-555-6666",
+      "website": "https://www.example.com/artifacts",
+      "image": "logo_artifacts.webp",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Golden Sands Exports",
+      "address": "32 Gold Street, Timbuktu",
+      "phone": "+223 777-888-9999",
+      "website": "https://www.example.com/exports",
+      "image": "logo_exports.webp",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Timbuktu Textiles",
+      "address": "65 Weave Way, Timbuktu",
+      "phone": "+223 222-333-4444",
+      "website": "https://www.example.com/textiles",
+      "image": "logo_textiles.webp",
+      "membershipLevel": 3
+    }
+  ]
+}
