@@ -1,0 +1,75 @@
+  body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light background */
+            color: #334155; /* Dark text */
+        }
+        /* Custom styles for animations */
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .card-animation {
+            animation: slideInFromLeft 0.8s ease-out forwards;
+            opacity: 0; /* Start hidden */
+        }
+        /* Delay for sequential animation */
+        .card-animation:nth-child(1) { animation-delay: 0.1s; }
+        .card-animation:nth-child(2) { animation-delay: 0.3s; }
+        .card-animation:nth-child(3) { animation-delay: 0.5s; }
+        .card-animation:nth-child(4) { animation-delay: 0.7s; }
+
+        /* Styling for the backdrop of the modal */
+        dialog::backdrop {
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+
+        /* Styling for the dialog itself */
+        dialog {
+            border: none;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+            width: 500px;
+            background-color: #ffffff;
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+        dialog h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+        dialog p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: #475569;
+        }
+        dialog button {
+            background-color: #ef4444; /* Red for close */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+        dialog button:hover {
+            background-color: #dc2626;
+        }
