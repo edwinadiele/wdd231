@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abuja Chamber of Commerce | Home</title>
+    <meta name="description" content="Welcome to the Abuja Chamber of Commerce. Connecting businesses and fostering growth in Abuja, Nigeria.">
+    <link rel="icon" href="images/favicon.ico"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/chamber.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-title">
+                <img src="./images/Gold Logo Mockup on grey wall.jpg" alt="Abuja Chamber of Commerce Logo">
+                <h1>Abuja Chamber of Commerce</h1>
+            </div>
+            <div class="hamburger">&#9776;</div> </div>
+    </header>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li> <li><a href="discover.html">Discover</a></li> <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li> <li><a href="contact.html">Contact</a></li> </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <img src="images/cloudy (1).png" alt="Abuja Cityscape">
+            <div class="hero-overlay">
+                <h2 style="color: black;">Empowering Businesses in Abuja</h2>
+                <a href="join.html" class="cta-button">Join the Chamber Today!</a>
+            </div>
+        </section>
+
+        <section class="events-section">
+            <h2>Upcoming Events</h2>
+            <div id="events-list">
+                <ul>
+                    <li><strong>May 28, 2025:</strong> Business Networking Mixer at Transcorp Hilton.</li>
+                    <li><strong>June 15, 2025:</strong> Digital Marketing Workshop for SMEs.</li>
+                    <li><strong>July 10, 2025:</strong> Annual Chamber Gala & Awards Night.</li>
+                </ul>
+                <p>Stay tuned for more exciting events!</p>
+            </div>
+        </section>
+
+        <section class="weather-section">
+            <h2>Abuja Weather</h2>
+            <div class="current-weather">
+                <img id="weather-icon" src="images/cloudy (1).png" alt="Weather Icon">
+                <div class="current-weather-info">
+                    <p>Current Temperature: <span id="current-temp">--</span>&deg;C</p>
+                    <!-- <p>Description: <span id="weather-desc">--</span></p> -->
+                </div>
+            </div>
+            <h3>3-Day Forecast</h3>
+            <div class="forecast-grid" id="forecast-container">
+                <div class="forecast-day">
+                    <p>Day 1</p>
+                    <img src="images/cloudy.png" alt="Forecast Icon">
+                    <p>Temp: --&deg;C</p>
+                </div>
+                <div class="forecast-day">
+                    <p>Day 2</p>
+                    <img src="images/sun.png" alt="Forecast Icon">
+                    <p>Temp: --&deg;C</p>
+                </div>
+                <div class="forecast-day">
+                    <p>Day 3</p>
+                    <img src="images/sun.png" alt="Forecast Icon">
+                    <p>Temp: --&deg;C</p>
+                </div>
+                <div class="forecast-day">
+                    <p>Day 4</p>
+                    <img src="images/weather.png" alt="Forecast Icon">
+                    <p>Temp: --&deg;C</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="spotlights-section">
+            <h2>Member Spotlights</h2>
+            <div class="spotlights-grid" id="spotlights-container">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Abuja Chamber of Commerce</p>
+            <p>123 Business Avenue, Abuja, FCT, Nigeria</p>
+            <p>Email: info@abujachamber.org | Phone: +234 800 123 4567</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+<script src="./js/chamber.js"></script>
+</body>
+</html>
+ 
