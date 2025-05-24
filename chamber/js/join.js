@@ -1,4 +1,4 @@
- // Function to set the current timestamp
+    // Function to set the current timestamp
         function setTimestamp() {
             const timestampField = document.getElementById('timestamp');
             if (timestampField) {
