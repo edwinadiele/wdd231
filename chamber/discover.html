@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Port Harcourt - Abuja Chamber of Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/discover.css">
+    <link rel="stylesheet" href="css/medium.css" media="(min-width: 641px)">
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="bg-blue-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="images/Gold Logo Mockup on grey wall.jpg" alt="Chamber Logo" class="h-12 w-12 rounded-full">
+                <h1 class="text-2xl font-bold">Abuja Chamber of Commerce</h1>
+            </div>
+            <button id="hamburgerBtn" class="text-white focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <nav id="navigation" class="bg-blue-700 text-white p-2 shadow-sm">
+        <div class="container mx-auto">
+            <ul class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-8">
+                <li><a href="index.html" class="hover:text-blue-200 transition-colors duration-200">Home</a></li>
+                <li><a href="#" class="hover:text-blue-200 transition-colors duration-200">About Us</a></li>
+                <li><a href="#" class="hover:text-blue-200 transition-colors duration-200">Events</a></li>
+                <li><a href="directory.html" class="hover:text-blue-200 transition-colors duration-200">Directory</a></li>
+                <li><a href="join.html" class="hover:text-blue-200 transition-colors duration-200">Join</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="discover-main container mx-auto p-6 flex-grow">
+        <section class="hero-discover relative text-center text-white rounded-lg overflow-hidden shadow-md">
+            <picture>
+                <source srcset="images/ph-city-large.webp" media="(min-width: 1025px)">
+                <source srcset="images/ph-city-medium.webp" media="(min-width: 641px)">
+                <img src="../images/pexels-felixmittermeier-1080401.jpg" alt="Port Harcourt Cityscape" loading="lazy" class="w-full h-auto object-cover block">
+            </picture>
+            <div class="absolute top-0 left-0 w-full h-full bg-black/50 flex flex-col justify-center items-center p-4">
+                <h2 class="text-3xl font-semibold mb-2">Explore Port Harcourt</h2>
+                <p class="max-w-md">Discover the vibrant culture, natural beauty, and economic opportunities in the Garden City.</p>
+            </div>
+        </section>
+
+        <aside class="sidebar bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+            <h3 class="sidebar-title text-xl font-semibold text-blue-700 mb-3">Visitor Information</h3>
+            <p id="lastVisitMessage"></p>
+        </aside>
+
+        <section class="discover-grid bg-white p-6 rounded-lg shadow-md mt-6">
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4 text-center">Points of Interest</h2>
+            <div id="interestCards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-900 text-white p-6 mt-8 shadow-inner text-center text-sm">
+        <div class="container mx-auto">
+            <p>&copy; <span id="currentYear"></span> Chamber of Commerce. All rights reserved.</p>
+            <p>123 Business Lane, Abuja, Nigeria</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const navigation = document.getElementById('navigation');
+            const navUL = navigation.querySelector('ul');
+
+            // Function to toggle navigation visibility
+            const toggleNavigation = () => {
+                navigation.classList.toggle('hidden');
+            };
+
+            // Initially set navigation based on screen size (for no JS users on desktop)
+            const checkMediaQuery = () => {
+                if (window.matchMedia('(min-width: 641px)').matches) {
+                    navigation.classList.remove('hidden');
+                    navUL.classList.remove('flex-col', 'space-y-2');
+                    navUL.classList.add('flex-row', 'justify-center', 'space-x-8');
+                } else {
+                    navigation.classList.add('hidden');
+                    navUL.classList.remove('flex-row', 'justify-center', 'space-x-8');
+                    navUL.classList.add('flex-col', 'space-y-2');
+                }
+            };
+
+            // Initial check and listen for resize
+            checkMediaQuery();
+            window.addEventListener('resize', checkMediaQuery);
+
+            // Hamburger button click listener
+            hamburgerBtn.addEventListener('click', toggleNavigation);
+
+            // --- Last Visit Message Logic ---
+            const lastVisitMessageElement = document.getElementById('lastVisitMessage');
+            const ONE_DAY_IN_MS = 24 * 60 * 60 * 1000;
+            let lastVisit = localStorage.getItem('lastVisit');
+            const now = Date.now();
+
+            if (!lastVisit) {
+                lastVisitMessageElement.textContent = "Welcome! Let us know if you have any questions.";
+            } else {
+                lastVisit = parseFloat(lastVisit);
+                const timeDifference = now - lastVisit;
+                const daysDifference = Math.floor(timeDifference / ONE_DAY_IN_MS);
+                lastVisitMessageElement.textContent = (daysDifference < 1) ? "Back so soon! Awesome!" :
+                                                    (daysDifference === 1) ? "You last visited 1 day ago." :
+                                                    `You last visited ${daysDifference} days ago.`;
+            }
+            localStorage.setItem('lastVisit', now.toString());
+
+            // --- Dynamic Card Loading Logic ---
+            const interestCardsContainer = document.getElementById('interestCards');
+            fetch('data/discover.json')
+                .then(response => response.ok ? response.json() : Promise.reject(`HTTP error! status: ${response.status}`))
+                .then(data => {
+                    data.forEach(item => {
+                        const card = document.createElement('div');
+                        card.classList.add('interest-card', 'bg-white', 'border', 'border-gray-300', 'rounded-lg', 'shadow-md', 'p-4', 'flex', 'flex-col', 'items-center', 'text-center');
+                        card.innerHTML = `
+                            <h2 class="text-xl font-semibold text-blue-700 mb-2">${item.name}</h2>
+                            <figure class="mb-2">
+                                <img src="${item.image}" alt="${item.name}" loading="lazy" class="w-full h-48 object-cover rounded-md">
+                                <figcaption class="text-sm italic text-gray-600 mt-1">${item.name}</figcaption>
+                            </figure>
+                            <address class="text-sm text-gray-700 mb-2 not-italic">${item.address}</address>
+                            <p class="text-gray-800 mb-3">${item.description}</p>
+                            <button class="learn-more-btn bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Learn More</button>
+                        `;
+                        interestCardsContainer.appendChild(card);
+                    });
+                })
+                .catch(error => console.error('Error fetching data:', error));
+
+            // Footer date updates
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            document.getElementById('lastModified').textContent = document.lastModified;
+        });
+    </script>
+</body>
+</html>

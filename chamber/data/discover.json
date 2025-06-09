@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Port Harcourt Tourist Beach",
+    "address": "Off Borokiri Road, Port Harcourt, Rivers State",
+    "description": "A serene beach resort offering relaxation, water sports, and cultural performances, perfect for a family outing or a quiet escape.",
+    "image": "images/ph-beach.webp"
+  },
+  {
+    "name": "Garden City Amusement Park",
+    "address": "Eastern By-Pass, Port Harcourt, Rivers State",
+    "description": "A fun-filled destination with various rides, games, and attractions for children and adults, providing entertainment for the whole family.",
+    "image": "images/amusement-park.webp"
+  },
+  {
+    "name": "Isaac Boro Park",
+    "address": "Aba Road, Port Harcourt, Rivers State",
+    "description": "A historic and spacious park named after a national hero, ideal for picnics, leisurely strolls, and public events.",
+    "image": "images/isaac-boro-park.webp"
+  },
+  {
+    "name": "Bonny Island (Gateway)",
+    "address": "Accessible via ferry from Port Harcourt, Rivers State",
+    "description": "While not directly in Port Harcourt, Bonny Island is a significant nearby hub known for its rich history, natural gas facilities, and vibrant community.",
+    "image": "images/bonny-island.webp"
+  },
+  {
+    "name": "Adokiye Amiesimaka Stadium",
+    "address": "Igbo Etche Road, Port Harcourt, Rivers State",
+    "description": "A modern multi-purpose stadium primarily used for football matches and other sporting events, with a large seating capacity.",
+    "image": "images/stadium.webp"
+  },
+  {
+    "name": "Rivers State Cultural Centre",
+    "address": "Port Harcourt, Rivers State",
+    "description": "A vibrant center dedicated to promoting and preserving the diverse cultural heritage of Rivers State through art, music, and dance.",
+    "image": "images/cultural-centre.webp"
+  },
+  {
+    "name": "Port Harcourt Zoo",
+    "address": "Trans Amadi Industrial Layout, Port Harcourt, Rivers State",
+    "description": "Home to a variety of indigenous and exotic animal species, offering an educational and entertaining experience for visitors of all ages.",
+    "image": "images/ph-zoo.webp"
+  },
+  {
+    "name": "Mile One Market",
+    "address": "Mile 1, Diobu, Port Harcourt, Rivers State",
+    "description": "One of the largest and busiest markets in Port Harcourt, where you can find a wide array of goods, from fresh produce to textiles and electronics.",
+    "image": "images/mile-one-market.webp"
+  }
+]

@@ -1,0 +1,118 @@
+/* You can remove most of the base styles here as Tailwind CSS is handling them */
+
+/* Custom styles or overrides for Tailwind */
+
+/* Header - mostly handled by Tailwind classes in HTML */
+
+/* Hamburger Button */
+#hamburgerBtn {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Navigation */
+#navigation {
+    /* Background and text color are set by Tailwind in HTML */
+}
+
+#navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Flex properties for mobile/desktop handled by JS and Tailwind */
+}
+
+#navigation ul li {
+    /* Padding and text alignment for mobile handled by Tailwind */
+}
+
+#navigation ul li a {
+    color: white; /* Override Tailwind if needed */
+    text-decoration: none;
+    display: block; /* For full click area on mobile */
+    /* Hover effect handled by Tailwind */
+}
+
+/* Desktop Navigation */
+@media (min-width: 641px) {
+    #hamburgerBtn {
+        display: none;
+    }
+
+    #navigation {
+        display: flex; /* To align the ul in the nav */
+        justify-content: center; /* Center the nav on desktop if desired */
+    }
+
+    #navigation ul {
+        flex-direction: row;
+        gap: 2rem; /* Spacing between links on desktop */
+    }
+
+    #navigation ul li a {
+        display: inline-block; /* For proper padding */
+        padding: 0.5rem 0; /* Adjust vertical padding */
+    }
+}
+
+/* Discover Main */
+.discover-main {
+    /* Grid layout handled by Tailwind in HTML */
+}
+
+/* Hero Section */
+.hero-discover {
+    /* Positioning and text styles handled by Tailwind */
+}
+
+.hero-text {
+    /* Absolute positioning, background, flex layout handled by Tailwind */
+}
+
+/* Sidebar */
+.sidebar {
+    /* Background, padding, border, shadow handled by Tailwind */
+}
+
+.sidebar-title {
+    /* Text styles handled by Tailwind */
+}
+
+/* Discover Grid */
+.discover-grid {
+    /* Background, padding, shadow handled by Tailwind */
+}
+
+/* Interest Cards - basic structure */
+.interest-card {
+    /* Basic styles enhanced by Tailwind in HTML */
+}
+
+.interest-card figure {
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+.interest-card img {
+    /* Responsive image handled by Tailwind */
+    max-width: 100%;
+    height: auto;
+}
+
+.learn-more-btn {
+    /* Background, text, padding, border-radius handled by Tailwind */
+    border: none; /* In case Tailwind doesn't fully override browser defaults */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Example of custom transition if needed */
+}
+
+.learn-more-btn:hover {
+    /* Hover style potentially overridden by Tailwind */
+    transform: translateY(-1px); /* Example of custom hover effect */
+}
+
+/* Footer - mostly handled by Tailwind classes in HTML */
