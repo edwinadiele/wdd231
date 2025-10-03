@@ -7,7 +7,7 @@
     "category": "nutrition",
     "difficulty": "easy",
     "time": "15 mins",
-    "image": "../images/placeholder-400x240.jpg"
+    "image": "../images/bady-abbas-chrXKN7J8ic-unsplash.jpg"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "category": "fitness",
     "difficulty": "moderate",
     "time": "20 mins",
-    "image": "../images/placeholder-400x240.jpg"
+    "image": "../images/caju-gomes-QDq3YliZg48-unsplash.jpg"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "category": "habit",
     "difficulty": "challenging",
     "time": "25 mins",
-    "image": "../images/placeholder-400x240.jpg"
+    "image": "../images/christopher-campbell-kFCdfLbu6zA-unsplash.jpg"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "category": "nutrition",
     "difficulty": "easy",
     "time": "10 mins",
-    "image": "../images/placeholder-400x240.jpg"
+    "image": "../images/gerson-repreza-JRpq0AvlF-g-unsplash.jpg"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "category": "fitness",
     "difficulty": "moderate",
     "time": "15 mins",
-    "image": "../images/placeholder-400x240.jpg"
+    "image": "../images/heather-ford-Ug7kk0kThLk-unsplash.jpg"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "category": "habit",
     "difficulty": "challenging",
     "time": "20 mins",
-    "image": "../images/placeholder-400x240.jpg"
+    "image": "../images/hyttalo-souza-a1p0Z7RSkL8-unsplash.jpg"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "category": "nutrition",
     "difficulty": "easy",
     "time": "25 mins",
-    "image": "../images/placeholder-400x240.jpg"
+    "image": "../images/jason-briscoe-GrdJp16CPk8-unsplash.jpg"
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "category": "fitness",
     "difficulty": "moderate",
     "time": "10 mins",
-    "image": "../images/placeholder-400x240.jpg"
+    "image": "../images/jc-gellidon-UIp163xCV6w-unsplash.jpg"
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "category": "habit",
     "difficulty": "challenging",
     "time": "15 mins",
-    "image": "../images/placeholder-400x240.jpg"
+    "image": "../images/jenny-hill-Io2Zgb3_kdk-unsplash.jpg"
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@
     "category": "nutrition",
     "difficulty": "easy",
     "time": "20 mins",
-    "image": "../images/placeholder-400x240.jpg"
+    "image": "../images/kaylee-garrett-GaprWyIw66o-unsplash.jpg"
   },
   {
     "id": 11,
@@ -107,7 +107,7 @@
     "category": "fitness",
     "difficulty": "moderate",
     "time": "25 mins",
-    "image": "../images/placeholder-400x240.jpg"
+    "image": "../images/mariana-medvedeva-usfIE5Yc7PY-unsplash.jpg"
   },
   {
     "id": 12,
@@ -117,7 +117,7 @@
     "category": "habit",
     "difficulty": "challenging",
     "time": "10 mins",
-    "image": "../images/placeholder-400x240.jpg"
+    "image": "../images/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg"
   },
   {
     "id": 13,
@@ -127,7 +127,7 @@
     "category": "nutrition",
     "difficulty": "easy",
     "time": "15 mins",
-    "image": "../images/placeholder-400x240.jpg"
+    "image": "../images/samantha-gades-k95uqdEe8R4-unsplash.jpg"
   },
   {
     "id": 14,
@@ -137,7 +137,7 @@
     "category": "fitness",
     "difficulty": "moderate",
     "time": "20 mins",
-    "image": "../images/placeholder-400x240.jpg"
+    "image": "../images/thomas-yohei-BAlBUJb-SXQ-unsplash.jpg"
   },
   {
     "id": 15,
@@ -147,6 +147,6 @@
     "category": "habit",
     "difficulty": "challenging",
     "time": "25 mins",
-    "image": "../images/placeholder-400x240.jpg"
+    "image": "../images/victoria-aleksandrova-9zsiNYwvYCM-unsplash.jpg"
   }
 ]
