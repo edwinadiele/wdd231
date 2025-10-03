@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Healthy Living Hub — Mental Wellness</title>
+  <meta name="description" content="Mindfulness, stress management, and supportive habits for mental wellbeing.">
+  <meta name="author" content="Your Name">
+  <meta property="og:title" content="Healthy Living Hub — Mental Wellness">
+  <meta property="og:description" content="Mindfulness, stress management, and supportive habits for mental wellbeing.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="images/favicon.svg" alt="" class="brand-mark" width="28" height="28" />
+      <span class="brand-name">Healthy Living Hub</span>
+    </a>
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">
+      <span class="bars" aria-hidden="true"></span>
+    </button>
+    <nav id="siteNav" class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nutrition.html">Nutrition &amp; Fitness</a></li>
+        <li><a href="mental.html">Mental Wellness</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme">🌓</button>
+  </div>
+</header>
+
+<main class="container content">
+  <h1>Mental Wellness</h1>
+  <p class="lead">Share your wellness goal below. We’ll echo it back on submission.</p>
+
+  <form class="card form" action="thanks.html" method="GET">
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" name="name" required autocomplete="name">
+    </div>
+    <div class="field">
+      <label for="goal">Your wellness goal</label>
+      <input id="goal" name="goal" required maxlength="120">
+    </div>
+    <div class="field">
+      <label for="frequency">How often will you practice it?</label>
+      <select id="frequency" name="frequency" required>
+        <option value="daily">Daily</option>
+        <option value="3x-week">3× per week</option>
+        <option value="weekly">Weekly</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="start">Start date</label>
+      <input id="start" type="date" name="start" required>
+    </div>
+    <button class="button" type="submit">Submit Goal</button>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Healthy Living Hub • <a href="attributions.html">Attributions</a></p>
+    <p>Video demo: <a href="#" rel="noopener">Add your video link</a></p>
+    <p>&copy; <span id="current-year"></span> Adiele Edwin Obinna 📍 Lagos, Nigeria</p>
+    <p id="lastModified"></p>
+  </div>
+</footer>
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>

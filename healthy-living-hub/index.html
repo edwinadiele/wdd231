@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Healthy Living Hub — Home</title>
+  <meta name="description" content="A friendly resource for simple habits in nutrition, fitness, and mental wellness.">
+  <meta name="author" content="Your Name">
+  <meta property="og:title" content="Healthy Living Hub — Home">
+  <meta property="og:description" content="A friendly resource for simple habits in nutrition, fitness, and mental wellness.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="images/favicon.svg" alt="" class="brand-mark" width="28" height="28" />
+      <span class="brand-name">Healthy Living Hub</span>
+    </a>
+
+    <!-- Hamburger -->
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">
+      <span class="bars"></span> ⚽⚽
+    </button>
+
+    <!-- Navigation -->
+    <nav id="siteNav" class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nutrition.html">Nutrition &amp; Fitness</a></li>
+        <li><a href="mental.html">Mental Wellness</a></li>
+      </ul>
+    </nav>
+
+    <!-- Theme toggle -->
+    <button id="themeToggle" aria-label="Toggle dark mode" class="theme-toggle">
+      🌙
+    </button>
+  </div>
+</header>
+
+<main class="container content">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Small habits. Big change.</h1>
+      <p>Build sustainable routines for body and mind with bite-sized tips and tools.</p>
+      <a class="button" href="nutrition.html">Explore tips</a>
+    </div>
+    <picture class="hero-media">
+      <img src="../images/pexels-felixmittermeier-1080401.jpg" alt="Person tying running shoes outdoors" loading="lazy">
+    </picture>
+  </section>
+
+  <section class="features">
+    <article>
+      <h2>Nutrition</h2>
+      <p>Simple, balanced choices that fit real life. No fads.</p>
+    </article>
+    <article>
+      <h2>Fitness</h2>
+      <p>Move a little, feel a lot better. Start where you are.</p>
+    </article>
+    <article>
+      <h2>Mental Wellness</h2>
+      <p>Mindfulness, stress relief, and routines to protect your peace.</p>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Healthy Living Hub • <a href="attributions.html">Attributions</a></p>
+    <p>Video demo: <a href="#" rel="noopener">Add your video link</a></p>
+    <p>&copy; <span id="current-year"></span> Adiele Edwin Obinna 📍 Lagos, Nigeria</p>
+    <p id="lastModified"></p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

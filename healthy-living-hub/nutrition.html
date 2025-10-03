@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Healthy Living Hub — Nutrition & Fitness</title>
+  <meta name="description" content="Browse practical nutrition and fitness tips with filters and a detail modal.">
+  <meta name="author" content="Your Name">
+  <meta property="og:title" content="Healthy Living Hub — Nutrition & Fitness">
+  <meta property="og:description" content="Browse practical nutrition and fitness tips with filters and a detail modal.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="images/favicon.svg" alt="" class="brand-mark" width="28" height="28" />
+      <span class="brand-name">Healthy Living Hub</span>
+    </a>
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">
+      <span class="bars" aria-hidden="true"></span>
+    </button>
+    <nav id="siteNav" class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nutrition.html">Nutrition &amp; Fitness</a></li>
+        <li><a href="mental.html">Mental Wellness</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme">🌓</button>
+  </div>
+</header>
+
+<main class="container content">
+  <h1>Nutrition &amp; Fitness Tips</h1>
+  <p class="lead">Filter, explore, and click a card to see more details.</p>
+
+  <form id="filters" class="filters" aria-label="Filter tips">
+    <label>
+      Category
+      <select id="category">
+        <option value="all">All</option>
+        <option value="nutrition">Nutrition</option>
+        <option value="fitness">Fitness</option>
+        <option value="habit">Habit</option>
+      </select>
+    </label>
+    <label>
+      Difficulty
+      <select id="difficulty">
+        <option value="all">All</option>
+        <option value="easy">Easy</option>
+        <option value="moderate">Moderate</option>
+        <option value="challenging">Challenging</option>
+      </select>
+    </label>
+  </form>
+
+  <section id="tipsGrid" class="grid" aria-live="polite"></section>
+</main>
+
+<dialog id="tipModal" class="modal" aria-label="Tip details">
+  <button class="modal-close" data-close>×</button>
+  <div class="modal-body" id="modalBody"></div>
+</dialog>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Healthy Living Hub • <a href="attributions.html">Attributions</a></p>
+    <p>Video demo: <a href="#" rel="noopener">Add your video link</a></p>
+    <p>&copy; <span id="current-year"></span> Adiele Edwin Obinna 📍 Lagos, Nigeria</p>
+    <p id="lastModified"></p>
+  </div>
+</footer>
+
+<script type="module">
+  import { initGlobal } from './js/main.js';
+  import { initTips } from './js/tips.js';
+  initGlobal();
+  initTips();
+</script>
+
+
+</body>
+</html>
